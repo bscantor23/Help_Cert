@@ -13,6 +13,10 @@ class Document_TypesTableSeeder extends Seeder
      */
     public function run()
     {
+        Schema::disableForeignKeyConstraints();
+        Document_Type::truncate();
+        Schema::enableForeignKeyConstraints();
+
         Document_Type::create([
             'document_type_name'=> 'Tarjeta de Identidad',
             'abbreviation' => 'TI',

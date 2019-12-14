@@ -13,25 +13,29 @@ class GendersTableSeeder extends Seeder
      */
     public function run()
     {
+        Schema::disableForeignKeyConstraints();
+        Gender::truncate();
+        Schema::enableForeignKeyConstraints();
+
         Gender::create([
             'gender_name'=>'Masculino',
             'abbreviation'=>'M',
             'created_at'=>Carbon::now(),
-            'udpated_at'=>Carbon::now()
+            'updated_at'=>Carbon::now()
         ]);
 
         Gender::create([
             'gender_name'=>'Femenino',
             'abbreviation'=>'F',
             'created_at'=>Carbon::now(),
-            'udpated_at'=>Carbon::now()
+            'updated_at'=>Carbon::now()
         ]);
 
         Gender::create([
             'gender_name'=>'Otro',
             'abbreviation'=>'O',
             'created_at'=>Carbon::now(),
-            'udpated_at'=>Carbon::now()
+            'updated_at'=>Carbon::now()
         ]);
     }
 }

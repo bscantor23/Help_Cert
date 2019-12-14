@@ -13,40 +13,18 @@ class RegionsTableSeeder extends Seeder
      */
     public function run()
     {
-        Region::create([
-            'region_name'=>'Andina',
-            'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now()
-        ]);
+        Schema::disableForeignKeyConstraints();
+        Region::truncate();
+        Schema::enableForeignKeyConstraints();
 
-        Region::create([
-            'region_name'=>'Caribe',
-            'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now()
-        ]);
+        $regions= ['Andina','Caribe','Insular','Orinoquía','Pacífico','Amazonía'];
 
-        Region::create([
-            'region_name'=>'Insular',
-            'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now()
-        ]);
-
-        Region::create([
-            'region_name'=>'Orinoquía',
-            'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now()
-        ]);
-
-        Region::create([
-            'region_name'=>'Pacífico',
-            'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now()
-        ]);
-
-        Region::create([
-            'region_name'=>'Amazonía',
-            'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now()
-        ]);
+        for($i=0;$i<=5;$i++){
+            Region::create([
+                'region_name'=>$regions[$i],
+                'created_at'=>Carbon::now(),
+                'updated_at'=>Carbon::now()
+            ]);
+        }
     }
 }

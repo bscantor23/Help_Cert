@@ -16,13 +16,9 @@ class CreateContractTypesTable extends Migration
         Schema::create('contract_types', function (Blueprint $table) {
             $table->increments('id');
             $table->string('contract_code')->unique();
-            $table->string('number_contract')->unique();
             $table->text('introductory_text');
-            $table->text('way_pay');
-            $table->decimal('contract_total_pay');
             $table->text('specific_obligations');
-            $table->text('object_certificate');
-            $table->text('contract_information_term');
+            $table->text('object_contract');
             $table->string('seals');
             $table->timestamps();
         });

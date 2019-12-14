@@ -16,17 +16,21 @@ class CitiesTableSeeder extends Seeder
      */
     public function run()
     {
+        Schema::disableForeignKeyConstraints();
+        City::truncate();
+        Schema::enableForeignKeyConstraints();
+
         $faker= Faker::create();
         $regions = Region::all()->pluck('id')->toArray();
 
-        Ciudad::create([
+        City::create([
             'region_id'=>1, // Región Andina
             'city_name'=>'Bogotá D.C',
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now()
         ]);
 
-        Ciudad::create([
+        City::create([
             'region_id'=>2, // Región Caribe
             'city_name'=>'Cartagena',
             'created_at'=>Carbon::now(),
@@ -34,9 +38,9 @@ class CitiesTableSeeder extends Seeder
         ]);
 
 
-        for($i=0;$i<=997;$i++){ // 998 registros
-            Ciudad::create([
-                'region_id'=>randomElement($regions),
+        for($i=0;$i<=198;$i++){ // 200 registros
+            City::create([
+                'region_id'=>$faker->randomElement($regions),
                 'city_name'=>$faker->city,
                 'created_at'=>Carbon::now(),
                 'updated_at'=>Carbon::now()

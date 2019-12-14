@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersTableSeeder::class);
         $this->call(CertificatesTableSeeder::class);
         $this->call(RequestsTableSeeder::class);
-        $this->call(Request_Statuses_HistoriesTableSeeder::class);
+        $this->call(Request_HistoriesTableSeeder::class);
         $this->call(ContractsTableSeeder::class);
     }
 }

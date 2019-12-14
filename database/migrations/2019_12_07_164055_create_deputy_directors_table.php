@@ -15,13 +15,14 @@ class CreateDeputyDirectorsTable extends Migration
     {
         Schema::create('deputy_directors', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('document_type_id')->unsigned();
-            $table->integer('gender_id')->unsigned();
             $table->string('deputy_director_names',45);
             $table->string('deputy_director_lastnames',45);
+            $table->string('email',100)->unique();
             $table->string('document_number',20)->unique();
             $table->string('phone_number',20);
-            $table->string('digital firm');
+            $table->string('digital_firm');
+            $table->integer('document_type_id')->unsigned();
+            $table->integer('gender_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('document_type_id')->references('id')->on('document_types');

@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Request_Status_History extends Model
+class Request_History extends Model
 {
-    protected $table='request_statuses_histories';
+    protected $table='request_histories';
     protected $primaryKey='id';
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRequestStatusesHistoriesTable extends Migration
+class CreateRequestHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateRequestStatusesHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('request_statuses_histories', function (Blueprint $table) {
+        Schema::create('request_histories', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('request_status_id')->unsigned();
             $table->integer('request_id')->unsigned();
@@ -31,6 +31,6 @@ class CreateRequestStatusesHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('request_status_histories');
+        Schema::dropIfExists('request_histories');
     }
 }

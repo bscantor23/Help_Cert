@@ -15,13 +15,12 @@ class CreateInstitutionsTable extends Migration
     {
         Schema::create('institutions', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('deputy_director_id')->unsigned();
-            $table->integer('city_id')->unsigned();
-            $table->string('nit',20);
+            $table->string('nit',20)->unique();
             $table->string('institution_name',100);
             $table->string('address',100);
             $table->string('phone_number',20);
-            $table->string('email',100)->unique();
+            $table->integer('deputy_director_id')->unsigned();
+            $table->integer('city_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('deputy_director_id')->references('id')->on('deputy_directors');
