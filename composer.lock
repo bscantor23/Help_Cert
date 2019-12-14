@@ -4182,16 +4182,16 @@
         },
         {
             "name": "scrivo/highlight.php",
-            "version": "v9.16.2.0",
+            "version": "v9.17.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scrivo/highlight.php.git",
-                "reference": "e1f92b62790f489a0986be860aefacb3c9f0a3d3"
+                "reference": "5451a9ad6d638559cf2a092880f935c39776134e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/e1f92b62790f489a0986be860aefacb3c9f0a3d3",
-                "reference": "e1f92b62790f489a0986be860aefacb3c9f0a3d3",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/5451a9ad6d638559cf2a092880f935c39776134e",
+                "reference": "5451a9ad6d638559cf2a092880f935c39776134e",
                 "shasum": ""
             },
             "require": {
@@ -4246,7 +4246,7 @@
                 "highlight.php",
                 "syntax"
             ],
-            "time": "2019-12-13T02:58:38+00:00"
+            "time": "2019-12-13T21:54:06+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
