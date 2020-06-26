@@ -1,131 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help_Cert</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="img/icons/HC.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Segoe+UI' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand bg-white max-height-box shadow-box p-0">
-        <div class="navbar-header principal-menu shadow-box">
-            <a class="navbar-brand" href="#">
-                <img class="ml-1 menu-icon" src="img/menu-icon.png" alt="">
-                <h4 class="text-brown font-weight-bold float-right ml-2 mt-2">Admin de Admin</h4>
-            </a>
-        </div>
-        <div class="bg-orange principal-nav">
-            <img class="transition-icon" src="img/transition-icon.png" alt="">
-            <ul class="navbar-nav items-principal-nav-container">
-                <li class="nav-item item-principal-nav">
-                    <a class="notifications-item" href="#">
-                        <img class="notifications-icon mr-4" src="img/notifications-icon.png" alt="">
-                    </a>
-                    <hr class="vertical-line">
-                </li>
-                <li class="nav-item item-principal-nav">
-                    <a class="perfil-item" href="">
-                        <img class="notifications-icon mx-2 d-inline-block" src="img/perfil.png" alt="">
-                        <h6 class="float-right mx-2 pt-2 text-white font-weight-bold">Claudia Herrera</h6>
-                    </a>
-                </li>
-                <li class="nav-item item-principal-nav">
-                    <hr class="vertical-line">
-                    <a class="options-item" href="">
-                        <img class="notifications-icon mr-4" src="img/options-icon.png" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid content-container bg-white">
-        <div class="row">
-            <div class="col-3 aside-menu">
-                <div class="component-aside-1">
-                    <h5 class="text-brown-muted font-weight-bold ">Team Controller</h5>
-                    <hr class="m-0 mb-3">
-                    <div class="item-component-aside">
-                        <img class="icon-aside-menu ml-2" src="img/icon-menu-1.png" alt="">
-                        <a class="" href=""><p class="text-muted mt-3 item-link-aside">Tabla de Información</p><hr class="m-0 mb-2"></a>
-                    </div>
-                    <div class="item-component-aside">
-                        <img class="icon-aside-menu ml-2" src="img/icon-menu-2.png" alt="">
-                        <a class="" href=""><p class="text-muted mt-3 item-link-aside">Crear Usuario</p><hr class="m-0 mb-2"></a>
-                    </div>
-                </div>
-                <div class="component-aside-2">
-                    <h5 class="text-brown-muted font-weight-bold ">Funcionarios</h5>
-                    <hr class="m-0 mb-3">
-                    <div class="item-component-aside">
-                        <img class="icon-aside-menu ml-2" src="img/icon-menu-1.png" alt="">
-                        <a class="" href=""><p class="text-muted mt-3 item-link-aside">Tabla de Información</p><hr class="m-0 mb-2"></a>
-                    </div>
-                </div>
-                <div class="component-aside-3">
-                    <h5 class="text-brown-muted font-weight-bold ">Solicitudes</h5>
-                    <hr class="m-0 mb-3">
-                    <div class="item-component-aside">
-                        <img class="icon-aside-menu ml-3" src="img/icon-menu-3.png" alt="">
-                        <a class="" href=""><p class="text-muted mt-3 item-link-aside">Registro de Novedades</p><hr class="m-0 mb-2"></a>
-                    </div>
-                    <div class="item-component-aside">
-                        <img class="icon-aside-menu ml-3" src="img/icon-menu-4.png" alt="">
-                        <a class="" href=""><p class="text-muted mt-3 item-link-aside">Asignación Controller</p><hr class="m-0 mb-2"></a>
-                    </div>
-                    <div class="item-component-aside">
-                        <img class="icon-aside-menu ml-3" src="img/icon-menu-5.png" alt="">
-                        <a class="" href=""><p class="text-muted mt-3 item-link-aside">Tiempos de Espera</p><hr class="m-0 mb-2"></a>
-                    </div>
-                </div>
+    <div class="container">
+        <nav class="nav-container">
+            <a href="index.html" ><img src="img/logos/sena-logo.png" alt=""></a>
+            <div class="navegacion-container">
+                <a href="pages/home/inicio.html"><img src="img/icons/home-icon.png"> INICIO</a>
+                <a href="pages/home/acerca_de.html"><img class="item-nav" src="img/icons/acerca-icon.png"> ACERDA DE</a>
+                <a href="pages/home/servicios.html"><img class="item-nav" src="img/icons/servicios-icon.png"> SERVICIOS</a>
+                <a href="pages/home/contacto.html"><img class="item-nav" src="img/icons/contacto-icon.png"> CONTACTO</a>
             </div>
-            <div class="col-9 principal-content pl-5">
-                <h5 class="text-brown-muted">Dashboard</h5><hr class="w-75">
-                <div class="info-items-container">
-                    <div class="info-item-1">
-                        <div class="header-item">
-                            <hr class="line-item">
-                        </div>
-                        <div class="content-item">
-                            <h1>606</h1>
-                            <h4>Certificados</h4>
-                        </div>
-                    </div>
-                    <div class="info-item-2">
-                        <div class="header-item">
-                            <hr class="line-item">
-                        </div>
-                        <div class="content-item">
-                            <h1 class="font-weight-bold">615</h1>
-                            <h4>Funcionarios</h4>
-                        </div>
-                    </div>
-                    <div class="info-item-3">
-                        <div class="header-item">
-                            <hr class="line-item">
-                        </div>
-                        <div class="content-item">
-                            <h1 class="font-weight-bold">210</h1>
-                            <h4>Solicitudes</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-bottom">
-                    <hr class="w-50 ">
-                    <img class="logo-content" src="img/logo.jpg" alt="">
-                </div>
+        </nav>
+        <section class="home-section">
+            <h1>HELP_CERT</h1>
+            <hr>
+            <div>
+                <h2>Bienvenido a tu plataforma de Certificados Digitales</h2>
             </div>
-        </div>
+            <a class="boton" href="pages/home/inicio.html">INICIO DE SESION</a>
+        </section>
+        <section class="footer">
+            <h2>HELP_CERT</h2>
+            <hr class="linea2">
+            <h3>© 2020 Help_Cert Todos los derechos reservados</h3>
+        </section>
     </div>
-    <footer class="container-fluid footer-container">
-        <img class="icon-footer" src="img/icon-footer.png" alt="">
-        <h2 class="text-white mt-4">HELP CERT</h2>
-        <hr class="hr-footer">
-        <p class="text-white mt-2">© Copyright 2020 - Todos los Derechos Reservados</p>
-    </footer>
+
 </body>
 
 </html>

@@ -5,10 +5,15 @@
 }
 
 body {
-    background: url("../img/background.png");
+    background: url("../img/backgrounds/background.png");
     background-size: cover;
     padding: 30px;
     height: 100%;
+}
+
+button:focus, button:focus:active {
+    outline: none;
+    box-shadow: none;
 }
 
 a, a:hover {
@@ -21,7 +26,7 @@ p {
 }
 
 a hr {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .bg-orange {
@@ -86,7 +91,7 @@ a hr {
 
 .items-principal-nav-container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto) 120px;
     grid-template-rows: 50px;
     justify-content: flex-end;
    
@@ -144,6 +149,45 @@ a hr {
     align-items: center;
 }
 
+.item-component-options {
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+
+    align-content: center;
+    align-items: center;
+}
+
+.container-options-item {
+    width: 50px;
+}
+
+.options-item {
+    background: none;
+    border: none;
+    width: 50px;
+}
+
+.options-container {
+    position: absolute;
+    width: 250px;
+    z-index: 2;
+    right: 10px;
+    top:48px;
+    visibility: hidden;
+    padding: 0px 10px 5px;
+    box-shadow: 3px 3px 3px #00000030;
+    border-radius: 5px;
+}
+
+.options-container p {
+    font-size: 15px !important;
+}
+
+.options-container hr {
+    width: 90%;
+}
+
 .principal-content {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.300);
     padding-top: 30px;
@@ -153,6 +197,12 @@ a hr {
 .icon-aside-menu {
     width: 40px;
     height: 40px;
+}
+
+
+.icon-options-menu {
+    width: 20px;
+    height: 20px;
 }
 
 .component-aside-3 .icon-aside-menu {
@@ -236,21 +286,21 @@ a hr {
 }
 
 .info-item-1 .content-item {
-    background: url("../img/info-item-1.png");
+    background: url("../img/backgrounds/info-item-1.png");
     background-size: 200px 200px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .info-item-2 .content-item {
-    background: url("../img/info-item-2.png");
+    background: url("../img/backgrounds/info-item-2.png");
     background-size: 200px 200px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .info-item-3 .content-item {
-    background: url("../img/info-item-3.png");
+    background: url("../img/backgrounds/info-item-3.png");
     background-size: 200px 200px;
     background-repeat: no-repeat;
     background-position: center;
