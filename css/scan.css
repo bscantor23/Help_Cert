@@ -1,0 +1,259 @@
+
+.content-container-1 {
+    display: grid;
+    padding: 30px;
+    height: 550px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 85%;
+    grid-template-areas: 
+        "rutas"
+        "titulo"
+        "items";
+}
+
+.content-container2 {
+    display: grid;
+    padding: 30px;
+    height: 550px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 15% 65%;
+    grid-template-areas: 
+        "rutas"
+        "titulo"
+        "busqueda"
+        "actuales";
+}
+
+.rutas {
+    grid-area: rutas;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    display: grid;
+}
+
+.texto-rutas {
+    width: 100%;
+    height: 100%
+}
+
+.titulo {
+    grid-area: titulo;    
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+}
+.texto-titulo {
+    width: 100%;
+    height: 100%;
+    color:#E84E0E;
+
+}
+.busqueda{ 
+    grid-area:busqueda;
+}
+.actuales{
+    grid-area: actuales;    
+    height: 100%;
+    width: 100%;
+}
+
+.items {
+    grid-area: items;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 300px 250px 300px;
+    grid-template-rows: 90%;
+    column-gap: 80px;
+    grid-template-areas: 
+        "archivo botones computador";
+}
+
+.busqueda {
+    grid-area: busqueda;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 500px 500px ;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+    grid-template-areas: 
+        "busqueda-cedula busqueda-fecha ";
+    padding-top: 20px;
+}
+
+.busqueda-cedula{
+    grid-area:busqueda-cedula;
+    display: grid;
+    justify-content: center;
+}
+
+
+.busqueda-fecha{
+    grid-area:busqueda-fecha;
+    display: grid;
+    justify-content: center;
+}
+
+.archivo {
+    grid-area: archivo;
+    padding-left: 10%;
+}
+
+.formulario-otros{
+
+    grid-area: form-otros;
+}
+
+.grupo179{
+    width: 250px;
+    height: 300px;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #8ebf42;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+.otros-container {
+    grid-area: items;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 500px 50px 500px;
+    grid-template-rows: 90%;
+    column-gap: 30px;
+    grid-template-areas: 
+        "form-otros linea-otros certificado-otros";
+}
+.arc{
+    background-color: seagreen;
+}
+
+.formulario-otros label {
+    margin-left: 50px;
+}
+
+.form-control{
+    width: 70%;
+    margin-left: 50px;
+}
+
+.linea2{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.botones {
+    grid-area: botones;
+}
+
+.linea-container-otros {
+
+    grid-area: linea-otros;
+}
+
+.computador {
+    grid-area: computador;
+}
+
+.certificado-container-otros {
+
+    grid-area: certificado-otros;
+}
+
+.grupo176{
+    width:350px ;
+    margin-left: 10%;
+}
+.exi{
+    color: black;
+    display: inline-block;
+    width:150px;
+    margin:0 !important;
+}
+ .crear{
+     color: black;
+     padding-top: 8px;
+ }
+ .agregar{
+     padding-top: 30px;
+ }
+ .visualizar{
+    padding-top:30px ;
+ }
+
+.icon-footer{
+    position: absolute;
+    left: 49.1%;
+    height: 20px;
+    width: 25px;
+}
+
+.footer-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    height: 100px;
+}
+
+.footer-container h2 {
+    text-align: center;
+}
+
+.hr-footer {
+    margin: 0;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.boton-file {
+    background-color: orange;
+}
+
+.boton-archivo {
+    padding-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 50% 20%;
+}
+
+.boton-otros-si {
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+
+.cr {
+    grid-area: items;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 500px 50px 500px;
+    grid-template-rows: 90%;
+    column-gap: 30px;
+    grid-template-areas: 
+        "archivo botones computador";
+}
+
+.archivo2{
+    grid-area: archivo;
+}
+
+.crear-form-container {
+    overflow-y: scroll;
+    height: 300px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help_Cert</title>
+    <link rel="shortcut icon" href="../../img/icons/HC.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Segoe+UI' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/scan.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand bg-white max-height-box shadow-box p-0">
+        <div class="navbar-header principal-menu shadow-box">
+            <a class="navbar-brand" href="#">
+                <img class="ml-1 menu-icon" src="../../img/icons/menu-icon.png" alt="">
+                <h4 class="text-brown font-weight-bold float-right ml-2 mt-2">Team Controller</h4>
+            </a>
+        </div>
+        <div class="bg-orange principal-nav">
+            <img class="transition-icon" src="../../img/icons/transition-icon.png" alt="">
+            <ul class="navbar-nav items-principal-nav-container">
+                <li class="nav-item item-principal-nav">
+                    <a class="notifications-item" href="dashboard.html">
+                        <img class="notifications-icon mr-4" src="../../img/icons/notifications-icon.png" alt="">
+                    </a>
+                    <hr class="vertical-line">
+                </li>
+                <li class="nav-item item-principal-nav">
+                    <a class="perfil-item" href="">
+                        <img class="notifications-icon mx-2 d-inline-block" src="../../img/icons/perfil.png" alt="">
+                        <h6 class="float-right mx-2 pt-2 text-white font-weight-bold">Claudia Herrera</h6>
+                    </a>
+                </li>
+                <li class="nav-item item-principal-nav">
+                    <hr class="vertical-line">
+                    <div class="container-options-item">
+                        <button class="options-item" id="options-button">
+                            <img class="notifications-icon mr-4" src="../../img/icons/options-icon.png" alt="">
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <div id="options" class="options-container bg-white">
+                <div class="item-component-options">
+                    <img class="icon-options-menu ml-2" src="../../img/icons/icon-actualizar.png" alt="">
+                    <a class="text-component-options" href="actualizacion.html">
+                        <p class="text-muted mt-3 item-link-aside">Actualizar Información</p>
+                        <hr class="m-0 mb-2">
+                    </a>
+                </div>
+                <div class="item-component-options">
+                    <img class="icon-options-menu ml-2" src="../../img/icons/icon-password.png" alt="">
+                    <a class="text-component-options" href="">
+                        <p class="text-muted mt-3 item-link-aside">Cambio Contraseña</p>
+                        <hr class="m-0 mb-2">
+                    </a>
+                </div>
+                <div class="item-component-options">
+                    <img class="icon-options-menu ml-2" src="../../img/icons/icon-sesion.png" alt="">
+                    <a class="text-component-options" href="../../index.html">
+                        <p class="text-muted mt-3 item-link-aside">Cerrar Sesión</p>
+                        <hr class="m-0 mb-2">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content-container-1 bg-white">
+        <div class="rutas">
+            <div class="texto-rutas">
+                <a class="float-left" href="dashboard.html"><h4 class="text-brown-muted">Contratos</h4></a>
+                <h4  class="text-brown-muted float-left px-2">-></h4>
+                <a href="escaneo.html"><h4 class="text-brown-muted float-left">Escanear Archivos</h4></a>
+                <h4  class="text-brown-muted float-left px-2">-></h4>
+                <a href="#"><h4 class="text-brown-muted float-left">Creación Otros Si</h4></a>
+            </div>
+        </div>
+        <div class="titulo">
+            <div class="texto-titulo">
+                <h2>CREACIÓN DE OTROS SI</h2>
+            </div>
+        </div>
+        <div class="otros-container">
+            <div class="formulario-otros">
+                <label>Número de Contrato</label>
+                <input type="text" class="form-control my-2" placeholder="Example input">
+                <label>Número de Cédula</label>
+                <input type="text" class="form-control my-2" placeholder="Example input">
+                <div class="boton-otros-si">
+                    <button type="button" class="btn btn-success">Buscar<img src="../img/buscar.png" alt=""></alt></button>
+                </div>
+            </div>
+            <div class="linea-container-otros">
+                <div class="linea2">
+                    <img style="height:350px;" src="../../img/others/vertical-line.png">
+                </div>
+            </div>
+            <div class="certificado-container-otros">
+                <div class="linea2">
+                    <img style="width:250px;" src="../../img/others/contrato-1-img.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="container-fluid footer-container">
+        <img class="icon-footer" src="../../img/icons/icon-footer.png" alt="">
+        <h2 class="text-white mt-4">HELP CERT</h2>
+        <hr class="hr-footer">
+        <p class="text-white mt-2">© Copyright 2020 - Todos los Derechos Reservados</p>
+    </footer>
+    <script src="../../js/dashboard.js"></script>
+    
+</body>
+
+</html>

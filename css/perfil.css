@@ -1,0 +1,29 @@
+.edit-option-container{
+    width: 100%;
+}
+.edit-option-container h5{
+    display: inline-block;
+    font-size: 18px;
+}
+
+.boton-edit-container{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 15px;
+    justify-self: center;
+    background-color:#A1390E;
+    align-items: center;
+}
+
+.edit-option-container hr{
+    margin: 8px;
+}
